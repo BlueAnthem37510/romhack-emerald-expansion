@@ -1238,6 +1238,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_DELUSION_TOWN",
+      "name": "DELUSION TOWN",
+      "x": 9,
+      "y": 4,
+      "width": 1,
+      "height": 1
     }
   ]
 }

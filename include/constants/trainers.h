@@ -108,7 +108,12 @@
 #define TRAINER_PIC_LEAF                  90
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
-#define TRAINER_PIC_COUNT                 93
+#define TRAINER_PIC_MIMI                  93
+#define TRAINER_PIC_VI                    94
+#define TRAINER_PIC_MOON                  95
+#define TRAINER_PIC_MELIA                 96
+#define TRAINER_PIC_PLUMERIA              97
+#define TRAINER_PIC_COUNT                 98
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -288,7 +293,7 @@
 enum TrainerClassID
 {
     TRAINER_CLASS_PKMN_TRAINER_1, // Unused
-    TRAINER_CLASS_PKMN_TRAINER_2, // Unused
+    TRAINER_CLASS_SPIRIT_TRAINER, // Unused
     TRAINER_CLASS_HIKER,
     TRAINER_CLASS_TEAM_AQUA,
     TRAINER_CLASS_PKMN_BREEDER,

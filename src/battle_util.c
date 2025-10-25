@@ -7375,7 +7375,8 @@ u8 GetAttackerObedienceForAction()
     s32 calc;
     u8 obedienceLevel = 0;
     u8 levelReferenced;
-
+    if(TRUE) //ignoring obidience
+        return 0;
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
         return OBEYS;
     if (BattlerHasAi(gBattlerAttacker))

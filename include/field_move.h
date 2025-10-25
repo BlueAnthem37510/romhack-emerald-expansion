@@ -21,6 +21,8 @@ static inline bool32 SetUpFieldMove(enum FieldMove fieldMove)
 
 static inline bool32 IsFieldMoveUnlocked(enum FieldMove fieldMove)
 {
+    //remove field move requirements
+    return 1;
     return gFieldMoveInfo[fieldMove].isUnlockedFunc();
 }
 

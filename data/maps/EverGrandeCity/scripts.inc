@@ -13,6 +13,9 @@ EverGrandeCity_EventScript_VictoryRoadSign::
 EverGrandeCity_EventScript_CitySign::
 	msgbox EverGrandeCity_Text_CitySign, MSGBOX_SIGN
 	end
+EverGrandeCity_EventScript_CaveSign::
+	msgbox EverGrandeCity_Text_CaveSign, MSGBOX_SIGN
+	end
 
 EverGrandeCity_EventScript_PokemonLeagueSign::
 	msgbox EverGrandeCity_Text_EnteringPokemonLeague, MSGBOX_SIGN
@@ -34,4 +37,9 @@ EverGrandeCity_Text_CitySign:
 	.string "EVER GRANDE CITY\p"
 	.string "“The paradise of flowers, the sea,\n"
 	.string "and POKéMON.”$"
+
+EverGrandeCity_Text_CaveSign:
+	.string "Oops, closed due to cave in. Sorry!$"
+
+
 

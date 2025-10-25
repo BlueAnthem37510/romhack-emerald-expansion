@@ -43,19 +43,19 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
+#define FLAG_HIDE_MIMI                  0x20 // Unused Flag
+#define FLAG_HIDE_MIMI_WATER_HOUSE      0x21 // Unused Flag
+#define FLAG_HIDE_VI_MIMI               0x22 // Unused Flag
+#define FLAG_HIDE_VI_WATER_HOUSE        0x23 // Unused Flag
+#define FLAG_HIDE_FREDDY                0x24 // Unused Flag
+#define FLAG_HIDE_BONNIE                0x25 // Unused Flag
+#define FLAG_HIDE_CHICA                 0x26 // Unused Flag
+#define FLAG_HIDE_FOXY                  0x27 // Unused Flag
+#define FLAG_HIDE_GOLDENFREDDY          0x28 // Unused Flag
+#define FLAG_HIDE_SPRINGTRAP            0x29 // Unused Flag
+#define FLAG_FNAF_BALL                  0x2A // Unused Flag
+#define FLAG_POKEMONPCMENU    0x2B // Unused Flag
+#define FLAG_IN_ELITE_FOUR    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
@@ -286,7 +286,7 @@
 #define FLAG_RECEIVED_TM_SNATCH              0x104
 #define FLAG_RECEIVED_TM_DIG                 0x105
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106
-#define FLAG_ENTERED_ELITE_FOUR              0x107
+#define FLAG_ENTERED_ELITE_FOUR_BREAKSTHEGAME              0x107
 #define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
 #define FLAG_RECEIVED_TM_TORMENT             0x109
 #define FLAG_RECEIVED_LAVARIDGE_EGG          0x10A

@@ -28,7 +28,7 @@ EverGrandeCity_SidneysRoom_OnWarp:
 	.2byte 0
 
 EverGrandeCity_SidneysRoom_EventScript_PlayerTurnNorth::
-	turnobject LOCALID_PLAYER, DIR_NORTH
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
 EverGrandeCity_SidneysRoom_OnFrame:
@@ -48,8 +48,9 @@ EverGrandeCity_SidneysRoom_EventScript_Sidney::
 	goto_if_set FLAG_DEFEATED_ELITE_4_SIDNEY, EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_SidneysRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SIDNEY, EverGrandeCity_SidneysRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_ROXANNE_1, EverGrandeCity_SidneysRoom_Text_Defeat	
 	goto EverGrandeCity_SidneysRoom_EventScript_Defeated
+	
 	end
 
 EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
@@ -59,8 +60,12 @@ EverGrandeCity_SidneysRoom_EventScript_PostBattleSpeech::
 
 EverGrandeCity_SidneysRoom_EventScript_Defeated::
 	setflag FLAG_DEFEATED_ELITE_4_SIDNEY
+	setflag FLAG_BADGE01_GET
 	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
 	msgbox EverGrandeCity_SidneysRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	msgbox EverGrandeCity_SidneysRoom_Text_ReceivedBadge, MSGBOX_DEFAULT
+	call Common_EventScript_PlayGymBadgeFanfare
+	special HealPlayerParty
 	release
 	end
 
@@ -85,3 +90,6 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "Now, go on to the next room and enjoy\l"
 	.string "your next battle!$"
 
+EverGrandeCity_SidneysRoom_Text_ReceivedBadge:
+	.string "{PLAYER} received the ELECTRIC BADGE\n"
+	.string "from HEEB.$"

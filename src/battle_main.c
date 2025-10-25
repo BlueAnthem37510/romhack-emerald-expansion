@@ -303,7 +303,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
     [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{PKMN} TRAINER") },
-    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{PKMN} TRAINER") },
+    [TRAINER_CLASS_SPIRIT_TRAINER] = { _("SPIRIT") },
     [TRAINER_CLASS_HIKER] = { _("HIKER"), 10 },
     [TRAINER_CLASS_TEAM_AQUA] = { _("TEAM AQUA") },
     [TRAINER_CLASS_PKMN_BREEDER] = { _("{PKMN} BREEDER"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
@@ -6191,4 +6191,99 @@ void BattleDebug_WonBattle(void)
 {
     gBattleOutcome |= B_OUTCOME_WON;
     gBattleMainFunc = sEndTurnFuncsTable[gBattleOutcome & 0x7F];
+}
+
+
+void GiveMonsFromTrainer(const struct Trainer *trainer){
+    u8 monsCount;
+    u8 i;
+    i = 0;
+    u8 j;    
+    j = 0;
+
+    
+    struct Pokemon party;  
+    const struct TrainerMon *partyData = trainer->party;
+    monsCount = trainer->partySize;
+    for (i = 0; i < monsCount; i++)
+    {
+            
+                     
+            //CreateMon(&party,  partyData[i].species, partyData[i].lvl, 0, 0, 0, OT_ID_PLAYER_ID, 0);
+
+           
+            s32 ball = -1; 
+            //Shininess
+            if (partyData[i].isShiny)
+            {
+                u32 personality;
+                u32 otid = gSaveBlock2Ptr->playerTrainerId[0]
+                    | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+                    | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+                    | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+                    do
+                    {
+                        personality = Random32();
+                        personality = ((((Random() % 8) ^ (HIHALF(otid) ^ LOHALF(otid))) ^ LOHALF(personality)) << 16) | LOHALF(personality);
+                    } while ( partyData[i].nature != 0 && partyData[i].nature - 1 != GetNatureFromPersonality(personality));
+
+
+
+                CreateMon(&party, partyData[i].species, partyData[i].lvl, 0, TRUE, personality, OT_ID_PRESET, otid);
+            }
+            else{
+                if(partyData[i].nature != 0){
+                    CreateMonWithNature(&party, partyData[i].species, partyData[i].lvl, 0, partyData[i].nature-1);
+                }
+                else{
+                    CreateMonWithNature(&party, partyData[i].species, partyData[i].lvl, 0, GetNatureFromPersonality( Random32()));
+                }
+            }
+            //SetMonData(&party, MON_DATA_HELD_ITEM, &partyData[i].heldItem);
+
+            CustomTrainerPartyAssignMoves(&party, &partyData[i]);
+            SetMonData(&party, MON_DATA_IVS, &(partyData[i].iv));
+            if (partyData[i].ev != NULL)
+            {
+                SetMonData(&party, MON_DATA_HP_EV, &(partyData[i].ev[0]));
+                SetMonData(&party, MON_DATA_ATK_EV, &(partyData[i].ev[1]));
+                SetMonData(&party, MON_DATA_DEF_EV, &(partyData[i].ev[2]));
+                SetMonData(&party, MON_DATA_SPATK_EV, &(partyData[i].ev[3]));
+                SetMonData(&party, MON_DATA_SPDEF_EV, &(partyData[i].ev[4]));
+                SetMonData(&party, MON_DATA_SPEED_EV, &(partyData[i].ev[5]));
+            }
+            if (partyData[i].ability != ABILITY_NONE)
+            {
+                const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[i].species];
+                u32 maxAbilities = ARRAY_COUNT(speciesInfo->abilities);
+                for (j = 0; j < maxAbilities; ++j)
+                {
+                    if (speciesInfo->abilities[j] == partyData[i].ability)
+                        break;
+                }
+                if (j < maxAbilities)
+                    SetMonData(&party, MON_DATA_ABILITY_NUM, &j);
+            }
+            SetMonData(&party, MON_DATA_FRIENDSHIP, &(partyData[i].friendship));
+            if (partyData[i].ball != ITEM_NONE)
+           {
+                ball = partyData[i].ball;
+                SetMonData(&party, MON_DATA_POKEBALL, &ball);
+            }
+            if (partyData[i].nickname != NULL)
+            {
+                SetMonData(&party, MON_DATA_NICKNAME, partyData[i].nickname);
+            }
+            CalculateMonStats(&party);
+
+        //#if B_TRAINER_CLASS_POKE_BALLS >= GEN_7
+        //    if (ball == -1)
+        //    {
+        //        ball = (sTrainerBallTable[trainer->trainerClass]) ? sTrainerBallTable[trainer->trainerClass] : ITEM_POKE_BALL;
+        //        SetMonData(&party, MON_DATA_POKEBALL, &ball);
+        //    }
+        //#endif
+            CopyMonToPC(&party);
+        //}
+    }     
 }

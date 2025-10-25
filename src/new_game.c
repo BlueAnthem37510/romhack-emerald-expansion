@@ -1,6 +1,7 @@
 #include "global.h"
 #include "new_game.h"
 #include "random.h"
+#include "data.h"
 #include "pokemon.h"
 #include "roamer.h"
 #include "pokemon_size_record.h"
@@ -48,6 +49,7 @@
 #include "constants/items.h"
 #include "difficulty.h"
 #include "follower_npc.h"
+#include "battle_main.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -56,6 +58,8 @@ static void WarpToTruck(void);
 static void ResetMiniGamesRecords(void);
 static void ResetItemFlags(void);
 static void ResetDexNav(void);
+static void SetUpPokemon(void);
+static void CreateMonsFromTrainerNum(u16 trainerNum);
 
 EWRAM_DATA bool8 gDifferentSaveFile = FALSE;
 EWRAM_DATA bool8 gEnableContestDebugging = FALSE;
@@ -131,7 +135,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F), MAP_NUM(MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
 
@@ -175,7 +179,7 @@ void NewGameInitData(void)
     ResetGabbyAndTy();
     ClearSecretBases();
     ClearBerryTrees();
-    SetMoney(&gSaveBlock1Ptr->money, 3000);
+    SetMoney(&gSaveBlock1Ptr->money, 10000);
     SetCoins(0);
     ResetLinkContestBoolean();
     ResetGameStats();
@@ -197,6 +201,7 @@ void NewGameInitData(void)
     InitDewfordTrend();
     ResetFanClub();
     ResetLotteryCorner();
+    SetUpPokemon();
     WarpToTruck();
     RunScriptImmediately(EventScript_ResetAllMapFlags);
     ResetMiniGamesRecords();
@@ -236,4 +241,32 @@ static void ResetDexNav(void)
     memset(gSaveBlock3Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock3Ptr->dexNavSearchLevels));
 #endif
     gSaveBlock3Ptr->dexNavChain = 0;
+}
+
+static void SetUpPokemon(void){
+    struct Pokemon mon;    
+    CreateMon(&mon, SPECIES_ZIGZAGOON_GALAR, 5, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
+    GiveMonToPlayer(&mon);    
+    //CreateMon(&mon, SPECIES_ENTEI, 100, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
+    //GiveMonToPlayer(&mon);  
+    //CreateMon(&mon, SPECIES_RAIKOU, 100, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
+    //GiveMonToPlayer(&mon);
+    //CreateMon(&mon, SPECIES_SUICUNE, 100, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
+    //GiveMonToPlayer(&mon);
+    CreateMonsFromTrainerNum(TRAINER_ROXANNE_1);
+    CreateMonsFromTrainerNum(TRAINER_BRAWLY_1);
+    CreateMonsFromTrainerNum(TRAINER_WATTSON_1);
+    CreateMonsFromTrainerNum(TRAINER_FLANNERY_1);
+    CreateMonsFromTrainerNum(TRAINER_NORMAN_1);
+    CreateMonsFromTrainerNum(TRAINER_WINONA_1);
+    CreateMonsFromTrainerNum(TRAINER_TATE_AND_LIZA_1);
+    CreateMonsFromTrainerNum(TRAINER_JUAN_1);
+    FlagSet(FLAG_SYS_POKEMON_GET);
+    FlagSet(FLAG_SYS_B_DASH);
+    AddBagItem(ITEM_MEGA_RING, 1);
+    EnableNationalPokedex();
+}
+static void CreateMonsFromTrainerNum(u16 trainerNum){
+    GiveMonsFromTrainer(GetTrainerStructFromId(trainerNum));
+   
 }

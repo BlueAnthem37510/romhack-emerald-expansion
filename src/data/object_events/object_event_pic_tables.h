@@ -489,6 +489,19 @@ static const struct SpriteFrameImage sPicTable_MagmaMemberF[] = {
     overworld_ascending_frames(gObjectEventPic_MagmaMemberF, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Mimi[] = {
+    overworld_ascending_frames(gObjectEventPic_Mimi, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Moon[] = {
+    overworld_ascending_frames(gObjectEventPic_Moon, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Vi[] = {
+    overworld_ascending_frames(gObjectEventPic_Vi, 2, 4),
+};
+static const struct SpriteFrameImage sPicTable_Melia[] = {
+    overworld_ascending_frames(gObjectEventPic_Melia, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Sidney[] = {
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),

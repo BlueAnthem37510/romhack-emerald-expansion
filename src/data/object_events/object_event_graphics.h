@@ -465,3 +465,13 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+const u16 gObjectEventPal_Meep[] = INCBIN_U16("graphics/object_events/palettes/meep.gbapal");
+const u32 gObjectEventPic_Mimi[] = INCBIN_U32("graphics/object_events/pics/people/mimi.4bpp");
+const u16 gObjectEventPal_Mimi[] = INCBIN_U16("graphics/object_events/palettes/mimi.gbapal");
+const u32 gObjectEventPic_Moon[] = INCBIN_U32("graphics/object_events/pics/people/moon.4bpp");
+const u16 gObjectEventPal_Moon[] = INCBIN_U16("graphics/object_events/palettes/moon.gbapal");
+const u32 gObjectEventPic_Vi[] = INCBIN_U32("graphics/object_events/pics/people/vi.4bpp");
+const u16 gObjectEventPal_Vi[] = INCBIN_U16("graphics/object_events/palettes/vi.gbapal");
+const u32 gObjectEventPic_Melia[] = INCBIN_U32("graphics/object_events/pics/people/melia.4bpp");
+const u16 gObjectEventPal_Melia[] = INCBIN_U16("graphics/object_events/palettes/melia.gbapal");

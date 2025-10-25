@@ -74,10 +74,10 @@
 #define TRAINER_RICKY_3                      68
 #define TRAINER_RICKY_4                      69
 #define TRAINER_RICKY_5                      70
-#define TRAINER_RANDALL                      71
-#define TRAINER_PARKER                       72
-#define TRAINER_GEORGE                       73
-#define TRAINER_BERKE                        74
+#define TRAINER_BONNIE                       71
+#define TRAINER_GOLDENFREDDY                 72
+#define TRAINER_CHICA                        73
+#define TRAINER_SPRINGTRAP                   74
 #define TRAINER_BRAXTON                      75
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77
@@ -92,9 +92,9 @@
 #define TRAINER_WILTON_4                     86
 #define TRAINER_WILTON_5                     87
 #define TRAINER_WARREN                       88
-#define TRAINER_MARY                         89
-#define TRAINER_ALEXIA                       90
-#define TRAINER_JODY                         91
+#define TRAINER_FREDDY                         89
+#define TRAINER_FOXY                       90
+#define TRAINER_VI_2                         91
 #define TRAINER_WENDY                        92
 #define TRAINER_KEIRA                        93
 #define TRAINER_BROOKE_1                     94
@@ -117,10 +117,10 @@
 #define TRAINER_VALERIE_3                   111
 #define TRAINER_VALERIE_4                   112
 #define TRAINER_VALERIE_5                   113
-#define TRAINER_CINDY_1                     114
+#define TRAINER_MIMI_1                     114
 #define TRAINER_DAPHNE                      115
 #define TRAINER_GRUNT_SPACE_CENTER_2        116
-#define TRAINER_CINDY_2                     117
+#define TRAINER_MOON_1                     117
 #define TRAINER_BRIANNA                     118
 #define TRAINER_NAOMI                       119
 #define TRAINER_CINDY_3                     120
@@ -404,7 +404,7 @@
 #define TRAINER_PERRY                       398
 #define TRAINER_HUGH                        399
 #define TRAINER_PHIL                        400
-#define TRAINER_JARED                       401
+#define TRAINER_JANE                       401
 #define TRAINER_HUMBERTO                    402
 #define TRAINER_PRESLEY                     403
 #define TRAINER_EDWARDO                     404
@@ -571,7 +571,7 @@
 #define TRAINER_CATHERINE_5                 565
 #define TRAINER_JULIO                       566
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_5     567
-#define TRAINER_GRUNT_UNUSED                568
+#define TRAINER_VI_1                        568
 #define TRAINER_GRUNT_MT_PYRE_4             569
 #define TRAINER_GRUNT_JAGGED_PASS           570
 #define TRAINER_MARC                        571
@@ -806,7 +806,7 @@
 #define TRAINER_JUAN_4                      800
 #define TRAINER_JUAN_5                      801
 #define TRAINER_ANGELO                      802
-#define TRAINER_DARIUS                      803
+#define TRAINER_MELIA                      803
 #define TRAINER_STEVEN                      804
 #define TRAINER_ANABEL                      805
 #define TRAINER_TUCKER                      806

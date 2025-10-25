@@ -668,6 +668,16 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
 	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
 	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
+	clearflag FLAG_BADGE01_GET
+	clearflag FLAG_BADGE02_GET
+	clearflag FLAG_BADGE03_GET
+	clearflag FLAG_BADGE04_GET
+	clearflag FLAG_BADGE05_GET
+	clearflag FLAG_BADGE06_GET
+	clearflag FLAG_BADGE07_GET
+	clearflag FLAG_BADGE08_GET
+	clearflag B_FLAG_DYNAMAX_BATTLE
+	clearflag FLAG_IN_ELITE_FOUR
 	setvar VAR_ELITE_4_STATE, 0
 	return
 
@@ -1158,3 +1168,16 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
+	.include "data/maps/GymWarp/scripts.inc"
+	.include "data/maps/PetalburgCity_GymTwo/scripts.inc"
+	.include "data/maps/EverGrandeCity_Warp/scripts.inc"
+	.include "data/maps/EverGrandeCity_MochasRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_MeepsRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_MoshisRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_LattesRoom/scripts.inc"
+	.include "data/maps/DelusionTown/scripts.inc"
+	.include "data/maps/DelusionTown_Player1F/scripts.inc"
+	.include "data/maps/DelusionTwon_Player2F/scripts.inc"
+	.include "data/maps/DelusionTown_WaterHouse/scripts.inc"
+	.include "data/maps/DelusionTown_MoonHouse/scripts.inc"
+	.include "data/maps/DelusionTown_SmallHouse/scripts.inc"
