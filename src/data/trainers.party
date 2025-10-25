@@ -1355,6 +1355,8 @@ Cinderace
 Level: 100
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Shiny: Yes
+Dynamax Level: 10
+Gigantamax: Yes
 - Shadow Ball
 - Will O Wisp
 - Fire Blast
@@ -2163,6 +2165,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 Ledian
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Dynamax Level: 10
 - Light Screen
 - Reflect
 - Bug Buzz

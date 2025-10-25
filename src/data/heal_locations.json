@@ -86,11 +86,12 @@
     },
     {
       "id": "HEAL_LOCATION_EVER_GRANDE_CITY",
-      "map": "MAP_EVER_GRANDE_CITY",
-      "x": 27,
-      "y": 49,
-      "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_EVER_GRANDE_NURSE"
+      "map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+      "x": 10,
+      "y": 6,
+      "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+      "respawn_x": 10,
+      "respawn_y": 6
     },
     {
       "id": "HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE",
@@ -162,13 +163,12 @@
     },
     {
       "id": "HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE",
-      "map": "MAP_EVER_GRANDE_CITY",
-      "x": 18,
+      "map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
+      "x": 10,
       "y": 6,
       "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
-      "respawn_x": 3,
-      "respawn_y": 4,
-      "respawn_npc": "LOCALID_LEAGUE_NURSE"
+      "respawn_x": 10,
+      "respawn_y": 6
     },
     {
       "id": "HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR",

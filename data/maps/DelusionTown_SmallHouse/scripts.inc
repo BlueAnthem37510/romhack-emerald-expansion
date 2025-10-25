@@ -62,7 +62,7 @@ DelusionTown_SmallHouse_Text_MeliaPostBattle:
 
 DelusionTown_EventScript_GiveWalrein::
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WALREIN
-	givemon SPECIES_WALREIN, 50, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31, shinyMode=TRUE
+	givemon SPECIES_WALREIN, 50, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31, shinyMode=SHINY_MODE_ALWAYS
 	call_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, DelusionTown_EventScript_ReceiveWalreinParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, DelusionTown_EventScript_ReceiveWalreinPC
 	goto Common_EventScript_NoMoreRoomForPokemon
