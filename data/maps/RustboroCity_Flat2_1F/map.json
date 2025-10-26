@@ -46,15 +46,8 @@
       "x": 2,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_RUSTBORO_CITY",
-      "dest_warp_id": "10"
-    },
-    {
-      "x": 3,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_RUSTBORO_CITY",
-      "dest_warp_id": "10"
+      "dest_map": "MAP_DIS_CITY",
+      "dest_warp_id": "1"
     },
     {
       "x": 3,
@@ -62,6 +55,13 @@
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_FLAT2_2F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DIS_CITY",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

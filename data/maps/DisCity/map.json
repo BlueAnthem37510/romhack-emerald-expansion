@@ -1,0 +1,90 @@
+{
+  "id": "MAP_DIS_CITY",
+  "name": "DisCity",
+  "layout": "LAYOUT_DIS_CITY",
+  "music": "MUS_RUSTBORO",
+  "region_map_section": "MAPSEC_DELUSION_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DELUSION_TOWN",
+      "offset": 15,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 35,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_FLAT2_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_DEVON_CORP_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_DEVON_CORP_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_CUTTERS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_FLAT1_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_POKEMON_SCHOOL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

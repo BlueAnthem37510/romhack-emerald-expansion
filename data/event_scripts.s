@@ -1181,3 +1181,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DelusionTown_WaterHouse/scripts.inc"
 	.include "data/maps/DelusionTown_MoonHouse/scripts.inc"
 	.include "data/maps/DelusionTown_SmallHouse/scripts.inc"
+
+	.include "data/maps/DisCity/scripts.inc"

@@ -85,7 +85,7 @@
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
       "width": 40,
-      "height": 80,
+      "height": 25,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/EverGrandeCity/border.bin",
@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/DelusionTown_SmallHouse/border.bin",
       "blockdata_filepath": "data/layouts/DelusionTown_SmallHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIS_CITY",
+      "name": "DisCity_Layout",
+      "width": 48,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/DisCity/border.bin",
+      "blockdata_filepath": "data/layouts/DisCity/map.bin"
     }
   ]
 }
