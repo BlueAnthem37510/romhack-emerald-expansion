@@ -240,6 +240,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mimi;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Vi;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Melia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KateBike;
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -497,6 +498,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOON] =                     &gObjectEventGraphicsInfo_Moon,
     [OBJ_EVENT_GFX_VI] =                       &gObjectEventGraphicsInfo_Vi,
     [OBJ_EVENT_GFX_MELIA] =                    &gObjectEventGraphicsInfo_Melia,
+    [OBJ_EVENT_GFX_KATE_BIKE] =                &gObjectEventGraphicsInfo_KateBike,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,

@@ -1,4 +1,5 @@
 .set LOCALID_MIMI, 1
+.set LOCALID_KATE, 6
 
 DelusionTown_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, DelusionTown_OnLoad
@@ -120,7 +121,39 @@ DelusionTown_Text_Mimi1:
 	.string "Again...?\l"
 	.string "Uh, thanks for letting me know!\p" 
 	.string "I'll go get them now.$"
+DelusionTown_EventScript_Kate_Trigger::
+	lockall
+	turnobject LOCALID_KATE, DIR_SOUTH
+	call DelusionTown_EventScript_Kate0
+	applymovement LOCALID_PLAYER, DelusionTown_Movement_Player_Right
+	waitmovement 0
+	release
+	end
+DelusionTown_EventScript_Kate_Talk::
+	lockall
+	faceplayer
+	call DelusionTown_EventScript_Kate0
+	release
+	end
+DelusionTown_EventScript_Kate0::
+	goto_if_set FLAG_IS_CHAMPION, DelusionTown_EventScript_Kate_Fight
+	msgbox DelusionTown_Text_Kate0, MSGBOX_NPC
+	return
+DelusionTown_EventScript_Kate_Fight::
+	trainerbattle_single TRAINER_KATE_1, DelusionTown_Text_Kate_Intro, DelusionTown_Text_Kate_Defeat, DelusionTown_EventScript_Kate_Defeated, NO_MUSIC	
+	release
+	end
+DelusionTown_EventScript_Kate_Defeated::
+	lockall
+	msgbox DelusionTown_Text_Kate_Defeated, MSGBOX_NPC
+	applymovement LOCALID_KATE, DelusionTown_Movement_Kate
+	waitmovement 0
+	setobjectxy LOCALID_KATE, -2, -2
+	removeobject LOCALID_KATE 
+	setflag FLAG_HIDE_KATE
 
+	release
+	end
 DelusionTown_Text_PlayerHouseSign:
 	.string "{PLAYER}'s House.$"
 
@@ -156,3 +189,39 @@ DelusionTown_Text_Sailor:
 DelusionTown_Text_Man:
 	.string "The BEACH has always been a\n"
 	.string "centerpiece of this TOWN. $"
+
+DelusionTown_Text_Kate0:
+	.string "I'll fight you.\p"
+	.string "When you're a CHAMPION.$"
+
+DelusionTown_Text_Kate_Intro:
+	.string "You and me?\n"
+	.string "Let's find out who's STRONGEST!$"
+
+DelusionTown_Text_Kate_Defeat:
+	.string "It wasn't me after all?$"
+
+DelusionTown_Text_Kate_Defeated:
+	.string "We should go to the gym\n"
+	.string "together sometime!\p"
+	.string "See ya!$"
+
+DelusionTown_Movement_Kate:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+DelusionTown_Movement_Kate_Down:
+	walk_down
+	step_end
+
+DelusionTown_Movement_Player_Right:
+	walk_right
+	step_end

@@ -14,7 +14,6 @@ EverGrandeCity_PokemonLeague_1F_OnWarpLoad:
 EverGrandeCity_PokemonLeague_1F_OnTransition:
 	setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
-	call_if_unset FLAG_IS_CHAMPION, EverGrandeCity_PokemonLeague_1F_EventScript_Stairs
 	end
 
 EverGrandeCity_PokemonLeague_1F_EventScript_Stairs::

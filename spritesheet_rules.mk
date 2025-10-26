@@ -4947,3 +4947,5 @@ $(OBJEVENTGFXDIR)/people/melia.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/mimi.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/kate_bike.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

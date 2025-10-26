@@ -113,7 +113,8 @@
 #define TRAINER_PIC_MOON                  95
 #define TRAINER_PIC_MELIA                 96
 #define TRAINER_PIC_PLUMERIA              97
-#define TRAINER_PIC_COUNT                 98
+#define TRAINER_PIC_KATE_BIKE             98
+#define TRAINER_PIC_COUNT                 99
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -358,6 +359,7 @@ enum TrainerClassID
     TRAINER_CLASS_PIKE_QUEEN,
     TRAINER_CLASS_PYRAMID_KING,
     TRAINER_CLASS_RS_PROTAG,
+    TRAINER_CLASS_BIKER,
     TRAINER_CLASS_COUNT,
 };
 

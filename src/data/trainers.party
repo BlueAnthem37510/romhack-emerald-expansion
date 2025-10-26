@@ -17115,14 +17115,35 @@ Groudon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_PLACEHOLDER ===
-Name: MAY
-Class: RS Protag
-Pic: RS May
+=== TRAINER_KATE_1 ===
+Name: ???
+Class: Biker
+Pic: Kate Bike
 Gender: Female
-Music: Male
+Music: Female
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Kyogre
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Morpeko (F) @ Focus Sash  
+Ability: Hunger Switch  
+Level: 1
+- Fake Out  
+- Parting Shot  
+- Aura Wheel  
+- Crunch  
+
+Machamp (F) @ Flame Orb  
+Ability: Guts  
+Level: 1   
+- Facade  
+- Close Combat  
+- Bullet Punch  
+- Knock Off  
+
+Koraidon  
+Ability: Orichalcum Pulse  
+Level: 1  
+- Collision Course  
+- Wild Charge  
+- Ancient Power  
+- Acrobatics  

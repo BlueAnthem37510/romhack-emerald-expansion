@@ -475,3 +475,4 @@ const u32 gObjectEventPic_Vi[] = INCBIN_U32("graphics/object_events/pics/people/
 const u16 gObjectEventPal_Vi[] = INCBIN_U16("graphics/object_events/palettes/vi.gbapal");
 const u32 gObjectEventPic_Melia[] = INCBIN_U32("graphics/object_events/pics/people/melia.4bpp");
 const u16 gObjectEventPal_Melia[] = INCBIN_U16("graphics/object_events/palettes/melia.gbapal");
+const u32 gObjectEventPic_KateBike[] = INCBIN_U32("graphics/object_events/pics/people/kate_bike.4bpp");
