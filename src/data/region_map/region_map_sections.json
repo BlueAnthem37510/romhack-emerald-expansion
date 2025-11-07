@@ -1238,6 +1238,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+      {
+      "id": "MAPSEC_DISCITY",
+      "name": "DISCITY",
+      "x": 10,
+      "y": 5,
+      "width": 1,
+      "height": 1
     }
   ]
 }

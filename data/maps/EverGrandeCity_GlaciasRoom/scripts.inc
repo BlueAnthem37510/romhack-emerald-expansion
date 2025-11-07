@@ -43,7 +43,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	setflag B_FLAG_DYNAMAX_BATTLE
-	trainerbattle_no_intro TRAINER_WATTSON_1, EverGrandeCity_GlaciasRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_FIZZY, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 

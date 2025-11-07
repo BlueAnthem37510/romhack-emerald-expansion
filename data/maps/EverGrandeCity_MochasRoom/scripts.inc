@@ -43,7 +43,7 @@ EverGrandeCity_MochasRoom_EventScript_Mocha::
 	goto_if_set FLAG_BADGE07_GET, EverGrandeCity_MochasRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_MochasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_TATE_AND_LIZA_1, EverGrandeCity_MochasRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_MOCHA, EverGrandeCity_MochasRoom_Text_Defeat
 	goto EverGrandeCity_MochasRoom_EventScript_Defeated
 	end
 

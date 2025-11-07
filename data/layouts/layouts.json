@@ -4545,7 +4545,7 @@
       "id": "LAYOUT_DIS_CITY",
       "name": "DisCity_Layout",
       "width": 48,
-      "height": 42,
+      "height": 47,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/DisCity/border.bin",

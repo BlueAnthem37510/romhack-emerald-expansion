@@ -504,7 +504,9 @@ static const struct SpriteFrameImage sPicTable_Melia[] = {
 static const struct SpriteFrameImage sPicTable_KateBike[] = {
     overworld_ascending_frames(gObjectEventPic_KateBike, 4, 4),
 };
-
+static const struct SpriteFrameImage sPicTable_Plumeria[] = {
+    overworld_ascending_frames(gObjectEventPic_Plumeria, 2, 4),
+};
 static const struct SpriteFrameImage sPicTable_Sidney[] = {
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 0),
     overworld_frame(gObjectEventPic_Sidney, 2, 4, 1),

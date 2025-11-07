@@ -43,7 +43,7 @@ EverGrandeCity_LattesRoom_EventScript_Latte::
 	goto_if_set FLAG_BADGE08_GET, EverGrandeCity_LattesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_LattesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_JUAN_1, EverGrandeCity_LattesRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_LATTE, EverGrandeCity_LattesRoom_Text_Defeat
 	goto EverGrandeCity_LattesRoom_EventScript_Defeated
 	end
 

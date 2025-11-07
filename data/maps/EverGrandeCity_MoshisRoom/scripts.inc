@@ -43,7 +43,7 @@ EverGrandeCity_MoshisRoom_EventScript_Moshi::
 	goto_if_set FLAG_BADGE05_GET, EverGrandeCity_MoshisRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_MoshisRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_NORMAN_1, EverGrandeCity_MoshisRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_DUCKIE, EverGrandeCity_MoshisRoom_Text_Defeat
 	goto EverGrandeCity_MoshisRoom_EventScript_Defeated
 	end
 

@@ -43,7 +43,7 @@ EverGrandeCity_MeepsRoom_EventScript_Meep::
 	goto_if_set FLAG_BADGE06_GET, EverGrandeCity_MeepsRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_MeepsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WINONA_1, EverGrandeCity_MeepsRoom_Text_Defeat
+	trainerbattle_no_intro TRAINER_MEEP, EverGrandeCity_MeepsRoom_Text_Defeat
 	goto EverGrandeCity_MeepsRoom_EventScript_Defeated
 	end
 

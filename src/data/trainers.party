@@ -4882,7 +4882,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_ROXANNE_1 ===
+=== TRAINER_ICHI ===
 Name: HEEB
 Class: Leader
 Pic: Leader Roxanne
@@ -4939,7 +4939,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Belch
 - Shift Gear
 
-=== TRAINER_BRAWLY_1 ===
+=== TRAINER_HEEB ===
 Name: FLUFFY
 Class: Leader
 Pic: Leader Brawly
@@ -4996,7 +4996,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Mystical Fire
 - Clear Smog
 
-=== TRAINER_WATTSON_1 ===
+=== TRAINER_FIZZY ===
 Name: VAL
 Class: Leader
 Pic: Leader Wattson
@@ -5054,7 +5054,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Parting Shot
 - Drain Punch
 
-=== TRAINER_FLANNERY_1 ===
+=== TRAINER_ANNA ===
 Name: DUCKIE
 Class: Leader
 Pic: Leader Flannery
@@ -5112,7 +5112,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Play Rough
 - Stone Edge
 
-=== TRAINER_NORMAN_1 ===
+=== TRAINER_DUCKIE ===
 Name: MOSHI
 Class: Leader
 Pic: Leader Norman
@@ -5169,18 +5169,18 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Sneak
 - Metronome
 
-=== TRAINER_WINONA_1 ===
+=== TRAINER_MEEP ===
 Name: MEEP
 Class: Leader
 Pic: Leader Winona
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+AI: Check Bad Move / Try To Faint / Check Viability / Risky / Force Setup First Turn 
 
 Maractus @ Terrain Extender
 Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe 
 - Grassy Terrain
 - Giga Drain
 - Leech Seed
@@ -5227,7 +5227,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Iron Tail
 - Magical Leaf
 
-=== TRAINER_TATE_AND_LIZA_1 ===
+=== TRAINER_MOCHA ===
 Name: MOCHA
 Class: Leader
 Pic: Leader Tate And Liza
@@ -5285,7 +5285,7 @@ Shiny: Yes
 - Metal Claw
 - Close Combat
 
-=== TRAINER_JUAN_1 ===
+=== TRAINER_LATTE ===
 Name: LATTE
 Class: Leader
 Pic: Leader Juan
@@ -17103,18 +17103,6 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
-Name: BRENDAN
-Class: RS Protag
-Pic: RS Brendan
-Gender: Male
-Music: Male
-Double Battle: No
-
-Groudon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 === TRAINER_KATE_1 ===
 Name: ???
 Class: Biker
@@ -17126,7 +17114,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Morpeko (F) @ Focus Sash  
 Ability: Hunger Switch  
-Level: 1
+Level: 50
 - Fake Out  
 - Parting Shot  
 - Aura Wheel  
@@ -17134,7 +17122,7 @@ Level: 1
 
 Machamp (F) @ Flame Orb  
 Ability: Guts  
-Level: 1   
+Level: 50   
 - Facade  
 - Close Combat  
 - Bullet Punch  
@@ -17142,8 +17130,46 @@ Level: 1
 
 Koraidon  
 Ability: Orichalcum Pulse  
-Level: 1  
+Level: 50  
 - Collision Course  
 - Wild Charge  
 - Ancient Power  
 - Acrobatics  
+
+=== TRAINER_PLUMERIA_1 ===
+Name: PLUMERIA
+Class: Doctor
+Pic: Plumeria
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Darkrai @ Life Orb  
+Ability: Bad Dreams  
+Tera Type: Dark  
+Timid Nature  
+IVs: 0 Atk  
+- Night Shade  
+- Night Daze  
+- Hypnosis  
+- Nightmare  
+
+Musharna @ Leftovers  
+Ability: Synchronize  
+Tera Type: Psychic  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Moonlight  
+- Light Screen  
+- Psychic  
+
+Komala @ Rocky Helmet  
+Ability: Comatose  
+Tera Type: Normal  
+Careful Nature  
+- Sleep Talk  
+- Yawn  
+- Wish  
+- Earthquake  
